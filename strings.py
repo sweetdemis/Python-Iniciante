@@ -8,6 +8,7 @@ print(f"tenho uma gata chamada {gato}, e duas cachorras chamadas {cachorro1} e {
 string = "eu amo o jao"
 print(f"{string}")
 print(string.upper())
+print(len(string))
 
 ostring = "MAS ENFIM ACONTECE"
 print(ostring.lower())
@@ -30,6 +31,8 @@ print(string[2]) #retorna a letra na posiçao
 
 print(string[2:5]) #retorna os caracteres entre os números e não inclui o 5º elemento
 print(string[-1:-4]) #o -1 é oultimo elemento e ele vai contar ate o -3
+print(ostring[0:13:2]) #começa no 0, vai ate o 12 e pula de dois em dois
+print(ostring[::-1]) #inverte    
 
 print(string.index("a")) #retorna o indice de uma letra ou uma palavra
 
