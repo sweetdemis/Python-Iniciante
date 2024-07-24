@@ -22,6 +22,9 @@ for index in range(17, 20): #imprime do 17 ate o 19
 for index in range(12, 20, 2): #o ultimo numero é de quantos em quantos
     print(index)
 
+for index in range(100, 0, -2): #de trás para frente
+    print(index)
+
 for index in range(len(bichinhos)):
     print(index, "->", bichinhos[index])
 
