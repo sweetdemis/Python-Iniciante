@@ -17,6 +17,7 @@ palavras.append("helicoptero") #apenas uma palavra
 palavras.insert(1, "boboca") #escolhe o indice
 palavras.pop() #remove o ultimo
 palavras.remove("bola")
+del palavras[0]
 #palavras.clear()
 print(palavras.index("dondoca")) #retorna o indice
 print(palavras.count("gago")) #numero de vezes em que aparece
@@ -31,7 +32,7 @@ familia.sort() #tambem organiza as strings
 familia.reverse() #de traz pra frente
 print(familia) 
 
-familia2 = familia #nao existe outra lista, a segunda ta só referenciando a primeira; mesmo espaço de memoria
+familia2 = familia.copy() #nao existe outra lista, a segunda ta só referenciando a primeira; mesmo espaço de memoria
 print(familia2)
 familia.remove("sarah")
 print(familia2) 
