@@ -41,4 +41,19 @@ familia3 = familia.copy() #uma lista nova, mas igual a outra
 familia.remove("pipoca")
 print(familia3)
 
-numeros = (28) #tuple: imutavel, as funcoes da lista que nao sao de modificacao funcionam igual com tuple
+texto = "abacaxi, banana, cenoura, damasco"
+lista = texto.split(", ")
+for index, item in enumerate(lista, start=1):
+    print(f"{index}: {item}")
+
+#listas dentro de listas:
+salas = [
+    ["Harry", "Zayn", (0, 10, 20, 30, 40, 50)],
+    ["Niall", "Louis", "Liam"]
+]
+
+print(salas[1])
+print(salas[1][1])
+print(salas[0][2][2])
+
+print(*salas, sep="\n")

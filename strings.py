@@ -21,7 +21,14 @@ print(ostring.isupper())
 
 print(texto.strip()) #remove espaços antes e depois, mas não entre as palavras
 
-print(string.replace("jao", "louis")) #pode ser substituida uma letra ou uma palavra
+
+lista = texto.split() #separa a string, se não tiver argumento o padrão é separar onde há espaços
+print(lista)
+
+lista_unida = "-".join(lista) #vai unir de volta. para strings, listas e tuplas
+print(lista_unida)
+
+print(string.replace("jao", "louis")) #pode ser substituida uma letra ou uma palavra (substitui jao por louis)
 palavra = "primeira"
 print(palavra.replace("i", "e", 1)) #vai substituir o primeiro "i" que ele achar. se fosse 2, ele ia substituir o primeiro e o segundo.
 
@@ -39,6 +46,7 @@ print(string.index("a")) #retorna o indice de uma letra ou uma palavra
 x = "jao" in string
 print(x)
 
+#para quebra de linha:
 lista = """linha 1,
 linha 2,
 linha 3."""

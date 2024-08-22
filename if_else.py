@@ -40,3 +40,9 @@ elif num1 > num2:
     print("o primeiro numero é maior")
 elif num1 < num2:
     print("o segundo numero é maior")
+
+#operação ternária:
+algo = input("digite algo: ")
+
+variavel = "digitou" if algo else "nao digitou"
+print(variavel)
